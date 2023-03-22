@@ -3,7 +3,7 @@
 
 Atom lite
 
-![Image](https://user-images.githubusercontent.com/128048776/225636286-138b0cd3-e803-494c-bebf-4b496920355f.png)
+![image](https://user-images.githubusercontent.com/128048776/226885422-69b86aee-fa04-4359-909b-d32c75cee99b.png)
 
 Atom Motion
 
