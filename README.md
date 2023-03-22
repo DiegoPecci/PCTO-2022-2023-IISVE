@@ -44,6 +44,7 @@ UnitV2:
 ![image](https://user-images.githubusercontent.com/128048776/226589561-de440cc1-217a-4f5c-89dd-277c8aeb8138.png)
 
 Schermata del sito:
+
 ![image](https://user-images.githubusercontent.com/128048776/226888625-a369f9e3-b07e-47a2-83ce-70216738f63d.png)
 
 Per utilizzare la camera è necessario accedere alla sua pagina delle documentazioni sul sito di M5Stack, e seguire i passaggi indicati sulla pagina al seguente link: https://docs.m5stack.com/en/unit/unitv2?id=uiflow. 
