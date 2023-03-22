@@ -27,7 +27,7 @@ Link UIFlow: https://flow.m5stack.com/
 Un codice utile a far funzionare il servo motore è il seguente -->
 
 
-![Image](https://user-images.githubusercontent.com/128048776/225633404-158b16ea-14f5-4be0-a4dc-c7a32f8ca1bb.png)
+![image](https://user-images.githubusercontent.com/128048776/226888429-a98a95a6-a1b8-4487-bf91-7f1177193e67.png)
 
 
 In questo programma:
