@@ -7,15 +7,13 @@ Atom lite
 
 Atom Motion
 
-![Image](https://user-images.githubusercontent.com/128048776/225636501-ec7cad2a-80f6-4945-b004-ffbf9356d7b5.png)
-
-
+![image](https://user-images.githubusercontent.com/128048776/226885926-e2ddae4a-1584-4de5-901e-fd91ecf2cbef.png)
 
 Il progetto permette di comandare da uno a quattro servo motori sfruttando le possibilità fornite dall'Atom motion. L'idea era quella di comandare un servo motore in modo tale che simulasse a grandi linee il movimento della coda di un pesce robot. Inoltre si è pensato potesse essere utile l'implementazione di una camera AI, precisamente la UnitV2, così da poter visualizzare la ripresa sullo schermo di uno smartphone e sfruttare tutte le funzioni garantite dalla camera. Per raggiungere lo scopo l'I2C è stato ottimale, vista la possibilità che offre di garantire la comunicazione tra un master ed uno slave, rappresentati in questo progetto dall'Atom lite e l'Atom Motion.
 
 Atom lite, Atom Motion, Servo motore
 
-![Image](https://user-images.githubusercontent.com/128048776/225637519-88b624ab-0a54-4c88-ab93-452b4875c3ac.jpeg)
+![image](https://user-images.githubusercontent.com/128048776/226886227-22032518-a3a0-4714-901c-e53cc99081ae.png)
 
 
 
@@ -54,5 +52,5 @@ Approciando la seconda parte del progetto è emerso un problema che ha fatto sì
 
 ![image](https://user-images.githubusercontent.com/128048776/226590344-fd2c3f5e-3d03-46ba-bbff-787ee6c309db.png)
 
-Tuttavia la funzione non permette di inserire anche l'elemento video, e questo ha ostecolato il lavoro. La soluzione proposta è stata quella di dover creare un blocco custom su UIflow per poter inserire anche l'elemento video nell'interfaccia interattiva. La creazione di blocchi su UIflow è possibile effettuarla tramite l'uso del Python, quindi sono servite conoscenze a riguardo.
+Tuttavia la funzione non permette di inserire anche l'elemento video, e questo ha ostecolato il lavoro. La soluzione proposta è stata quella di dover creare un blocco custom su UIflow per poter inserire anche l'elemento video nell'interfaccia interattiva. La creazione di blocchi su UIflow è possibile effettuarla tramite l'uso del Python, quindi sono servite conoscenze a riguardo. Cercando altre info a riguardo si è rivelato non possibile creare un blocco custom di questo tipo e altre idee sono state quella di creare una funzione loop che all'interno contenesse sempre il frame aggiornato della ripresa della cam ogni 3 sec (tempo minimo accettato da UIflow). i problemi di questa idea sono stati che l'url dell'immagine generato dall'app della UnitV2 cambiava con il cambiare del frame stesso, questo comportava la necessità di un continuo reinserimento manuale di un nuovo url nell'interfaccia di remote+. Nel caso in cui non ci fosse stato questo problema il video sarebbe risultato comunque ad una velocità di 0.3 fps. 
 
