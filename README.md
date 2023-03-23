@@ -57,3 +57,13 @@ Tuttavia la funzione non permette di inserire anche l'elemento video, e questo h
 
 Cercando altre info a riguardo si è rivelato non possibile creare un blocco custom di questo tipo e altre idee sono state quella di creare una funzione loop che all'interno contenesse sempre il frame aggiornato della ripresa della cam ogni 3 sec (tempo minimo accettato da UIflow). I problemi di questa idea sono stati che l'url dell'immagine generato dall'app della UnitV2 cambiava con il cambiare del frame stesso, questo comportava la necessità di un continuo reinserimento manuale di un nuovo url nell'interfaccia di remote+. Nel caso in cui non ci fosse stato questo problema il video sarebbe risultato comunque ad una velocità di 0.3 fps. 
 
+Mettendo un po' da parte il lavoro con la cam è stato dedicato del tempo alla scrittura di un codice che permettesse di comandare un servo motore in modo tale da simulare il movimento della coda di un pesce. I componenti utilizzati sono stati l'M5StickC, un servo motore e il C back driver. Per riuscire a comunicare che tipo di movimento avrebbe dovuto compiere il servo motore è stata utile la funziona Remote+ di UIflow. Attraverso di essa è stato generato un codice QR che mostrasse in rete una pagina con un joystick e un pulsante rosso di stop. Per decidere i range di angolatura dei movimenti che avrebbe dovuto compiere il servo motore è stato preso in considerazione il fatto che il grado 0 del servo motore era qualche grado in più rispetto a quello che si pensava. Per questo motivo anche le gradazioni dei range seguivano la stessa linea.  Al posto dei 90° standard sono stati adottati i 75°, e al posto dei soliti 180°, i 150°. Le nominazioni dei movimenti per il servo motore resi disponibili attraverso il codice sono: 
+- Avanti (55° -> 95°)
+- Sinistra - Avanti (55° -> 25°)
+- Sinistra - Sinistra (25° -> 0°)
+- Destra - Avanti (95° -> 125°)
+- Destra - Destra (125° -> 150°)
+Tra l'altro il pulsante rosso di stop è stato aggiunto per riportare le coordinate della posizione del joystick all'origine, altrimenti non tornava autonomamente alla posizione di partenza in maniera corretta. 
+
+Esempio codice del movimento Avanti: 
+![image](https://user-images.githubusercontent.com/128048776/227223205-a1d33b04-2dbf-43ca-aeef-d2243f2424d2.png)
