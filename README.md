@@ -63,6 +63,7 @@ Mettendo un po' da parte il lavoro con la cam è stato dedicato del tempo alla s
 - Sinistra - Sinistra (25° -> 0°)
 - Destra - Avanti (95° -> 125°)
 - Destra - Destra (125° -> 150°)
+
 Tra l'altro il pulsante rosso di stop è stato aggiunto per riportare le coordinate della posizione del joystick all'origine, altrimenti non tornava autonomamente alla posizione di partenza in maniera corretta. 
 
 Esempio codice del movimento Avanti: 
