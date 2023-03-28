@@ -68,3 +68,10 @@ Tra l'altro il pulsante rosso di stop è stato aggiunto per riportare le coordin
 
 Esempio codice del movimento Avanti: 
 ![image](https://user-images.githubusercontent.com/128048776/227223205-a1d33b04-2dbf-43ca-aeef-d2243f2424d2.png)
+
+Provando ad apportare migliorie al codice del servo motore è sembrato utile limitare la presenza di condizioni ripetute diverse volte, per cercare di rendere la lettura del codice da parte del software più facile e rapida. Tuttavia non è stato possibile farlo, in quanto, provando a far funzionare il codice, il servo motore continuava a mostrare un problema già in precedenza noto. Ovvero persisteva nel non passare regolarmente da un movimento all'altro, continuando a compiere in parte il movimento assegnato precedentemente. Nonostante venisse premuto il pulsante di stop, continuava a dare valori dell'asse x e dell'asse y della posizione del joystick sballati. È per questo motivo che si è cercato di diminuire la quantità di condizioni che il codice doveva affrontare, per rendere anche più veloce le sue ripetizioni. 
+
+Dal momento che neanche con questa soluzione il problema veniva risolto, si è pensato di ridurre la possibilità dei movimenti del servo motore permettondogli di muoversi solamente in avanti nel caso in cui la componente y sarebbe stata >50.
+
+Purtroppo ci si è resi conto dell'effettivo persistere del problema. Per questo lo si è attribuito al richiamo joystick della funzione Remote+. 
+
