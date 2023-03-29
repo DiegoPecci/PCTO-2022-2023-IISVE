@@ -85,3 +85,7 @@ Attraverso questo codice i movimenti del servo motore avevano un andamento linea
 Con questa prova si può constatare che il problema riscontrato precedentemente con il richiamo joystick della funzione Remote+ era effettivamente legato a una connessione non idonea, non dipendente alla rete al quale il dispositivo da cui si aveva scannerizzato il QR code era connesso. Questo perchè anche provando con diversi dispositivi e diverse connessioni il problema non si è risolto.
 
 ![image](https://user-images.githubusercontent.com/128048776/228538320-72ac59a3-b057-4b0c-99e3-8b087ac83b1f.png)
+
+![image](https://user-images.githubusercontent.com/128048776/228539059-90877594-09bf-4285-88d7-51d5abccaf05.png)
+
+
