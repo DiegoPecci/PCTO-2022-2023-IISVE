@@ -75,3 +75,13 @@ Dal momento che neanche con questa soluzione il problema veniva risolto, si è p
 
 Purtroppo ci si è resi conto dell'effettivo persistere del problema. Per questo lo si è attribuito al richiamo joystick della funzione Remote+. 
 
+A questo punto si è pensato di sostituire il joystick della funzione Remote+ collegando la unit angle, disponibile nel kit dell'M5StickC. La unit angle è un potenziometro in grado di assumere un valore analogico compreso tra 0 e 1024. Si è deciso di mettere in contatto il servo motore con la angle unit nel seguente modo:
+- valore analogico della unit <340 (il servo motore si muove tra 25° e 55°)
+- valore analogico della unit >340 e <684 (il servo motore si muove tra 50° e 90°)
+- valore analogico della unit >684 (il servo motore si muove tra 90° e 120°)
+
+Attraverso questo codice i movimenti del servo motore avevano un andamento lineare, senza scatti o pause non previste. Ifatti si è stati in grado di aumentare la velocità di movimento del servo motore con l'aumentare o il dimunuire ulteriormente del valore dell'angle unit e trovando il tempo adatto ad un movimento più rapido possibile tra i cambi di direzione del servo motore, senza farlo scattare.
+
+Con questa prova si può constatare che il problema riscontrato precedentemente con il richiamo joystick della funzione Remote+ era effettivamente legato a una connessione non idonea, non dipendente alla rete al quale il dispositivo da cui si aveva scannerizzato il QR code era connesso. Questo perchè anche provando con diversi dispositivi e diverse connessioni il problema non si è risolto.
+
+![image](https://user-images.githubusercontent.com/128048776/228538320-72ac59a3-b057-4b0c-99e3-8b087ac83b1f.png)
