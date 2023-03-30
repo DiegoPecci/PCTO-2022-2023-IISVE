@@ -88,4 +88,4 @@ Con questa prova si può constatare che il problema riscontrato precedentemente 
 
 ![image](https://user-images.githubusercontent.com/128048776/228539059-90877594-09bf-4285-88d7-51d5abccaf05.png)
 
-
+Inoltre si è pensato di provare a cambiare il valore dell'angolo del servo motore per ogni cambio di valore del potenziometro, semplicemente attribuendo al servo motore il valore dell'angle unit sul codice. Purtroppo c'è stato un problema: con 1024 valori del potenziometro il servo motore compieva circa 4 giri. L'unico modo per ovviare a ciò sarebbe stato creare uno switch case con 180 casi; ognuno avrebbe coperto un range di valori di circa 6, dalla divisione 1024/180. Non è stato fatto in quanto l'obiettivo era quello di creare un codice il più semplice possibile.
