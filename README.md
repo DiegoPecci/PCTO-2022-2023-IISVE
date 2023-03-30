@@ -94,7 +94,10 @@ Inoltre si è pensato di provare a cambiare il valore dell'angolo del servo moto
 ![image](https://user-images.githubusercontent.com/128048776/228784970-04e48980-8680-4dee-b3fe-edac846bdfe3.png)
 
 
-https://user-images.githubusercontent.com/128048776/228787633-94f58b80-5bc8-4a79-9aa3-4247cf725f05.mp4
+https://user-images.githubusercontent.com/128048776/228789564-8a143c60-2898-4e2f-9e81-a2d03362a26a.mp4
+
+
+
 
 
 
